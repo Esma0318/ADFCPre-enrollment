@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header with Profile */
+header {
+  background-color: #b5bdc5;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  flex-grow: 1; /* Makes the h1 element take up remaining space */
+  text-align: center; /* Centers the text */
+}
+
+/* Profile Button (Top Left) */
+.profile-btn {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.profile-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.profile-btn img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 50px; /* Position directly below the profile button */
+  left: 0; /* Align the dropdown to the left of the profile button */
+  background-color: white;
+  border-radius: 4px;
+  width: 150px; /* Set a small width for a clean look */
+  padding: 0; /* Remove padding for a sleeker design */
+  box-shadow: none; /* No shadow for minimal design */
+}
+
+/* Dropdown List Items (Links or Buttons) */
+.dropdown-item {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #333;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Form and Table */
+h1 {
+  color: #333;
+}
+
+form {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #1e7f91;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #031b33;
+}
+
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #08022c;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    padding: 15px;
+    width: 90%;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 14px;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f8fafc;
+  margin: 0;
+}
+header {
+  display: flex;
+  align-items: center;
+  background-color: #f4f6f8;
+  padding: 10px 0;
+}
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #050343;
+  margin-left: 20px;
+  flex: 1;
+}
+nav {
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #02031d;
+  padding: 0;
+}
+.navbar-nav .nav-link {
+  color: black;
+}
+.navbar-nav .nav-link:hover {
+  color: #0056b3;
+}
+main {
+  flex: 1;
+  padding: 10px;
+  margin-top: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0);
+}
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #52515f;
+  font-size: 0.8em;
+}
+.highlight-text {
+  font-family: 'Acme', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3em;
+  color: #898696;
+  transition: all 0.3s;
+  text-align: center;
+}
+.glass-effect {
+  background-image: url('images/4.jpg'); /* Your background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Fallback color with some opacity */
+  backdrop-filter: blur(10px); /* Add blur effect behind the content */
+  border-radius: 15px;
+  padding: 40px;
+  color: #050346;
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  font-size: larger;
+  max-width: 100%;
+}
+
+.btn {
+  transition: all 0.3s;
+  padding: 20px 40px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #cfab35;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+.btn:hover {
+  background: linear-gradient(to right, #cfab35, #9b4d04);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(247, 208, 125, 0.5);
+}
+.logo {
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 120px;
+}
